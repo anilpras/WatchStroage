@@ -14,7 +14,7 @@ namespace Company.Function
         [FunctionName("TimerTriggerCSharp1")]
         public static void Run([TimerTrigger("* */1 * * * *")]TimerInfo myTimer, ILogger log)
         {
-            var connectionString = "DefaultEndpointsProtocol=https;AccountName=networktrace;AccountKey=BZ/lnD/wLpNG3RHCtmW0ADCvqywQbt5l3kfC9vICUYmpqa+9Cs/6GP6JJaxbIJvbESiVIJFJr7I3sK1I3Gzb1g==;EndpointSuffix=core.windows.net";
+            var connectionString = "DefaultEndpointsProtocol=https;AccountName=<ACCOUNT NAME>;AccountKey=ACCOUNT KEY;EndpointSuffix=core.windows.net";
             var containerName = "upload";
          
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(connectionString);
